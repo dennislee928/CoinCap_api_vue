@@ -30,10 +30,12 @@
         </q-td>
       </template>
     </q-table>
+    <q-btn round color="secondary" icon="navigation" @click="goHome" />
   </div>
 </template>
 
 <script setup>
+import { useRouter } from "vue-router";
 import { useCryptoStore } from "../stores/cryptoStore";
 import { onMounted, computed } from "vue";
 
@@ -84,7 +86,12 @@ const columns = [
   },
 ];
 
+const router = useRouter();
 const markets = computed(() => cryptoStore.markets);
+
+const goHome = () => {
+  router.push("/");
+};
 </script>
 
 <style scoped>

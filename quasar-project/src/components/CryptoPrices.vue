@@ -7,13 +7,20 @@
       </li>
     </ul>
   </div>
+  <q-btn round color="secondary" icon="navigation" @click="goHome" />
 </template>
 
 <script setup>
+import { useRouter } from "vue-router";
 import { useCryptoStore } from "../stores/cryptoStore";
 import { onMounted, computed } from "vue";
 
+const router = useRouter();
 const cryptoStore = useCryptoStore();
+
+const goHome = () => {
+  router.push("/");
+};
 
 onMounted(() => {
   cryptoStore.fetchPrices();

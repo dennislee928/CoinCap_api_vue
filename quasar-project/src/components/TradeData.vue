@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ $t("tradeData.title") }}</h2>
+    <h2>Binance data block2 (coming soon)</h2>
     <ul>
       <li v-for="trade in trades" :key="trade.timestamp">
         {{ trade.exchange }} - {{ trade.base }}/{{ trade.quote }}:

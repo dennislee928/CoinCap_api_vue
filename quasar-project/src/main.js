@@ -1,17 +1,13 @@
 import { createApp } from "vue";
-import { Quasar } from "quasar";
-import pinia from "./stores"; // 確保這裡引入的是 stores/index.js
-import i18n from "./i18n";
+import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
+import i18n from "./i18n"; // 引入 i18n
 
 const app = createApp(App);
 
-app.use(Quasar, {
-  /* Quasar options */
-});
-app.use(pinia);
-app.use(i18n);
+app.use(createPinia());
 app.use(router);
+app.use(i18n); // 使用 i18n
 
 app.mount("#app");

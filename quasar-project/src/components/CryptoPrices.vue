@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ $t("cryptoPrices.title") }}</h2>
+    <h2>Crypto real time price:</h2>
     <ul>
       <li v-for="(price, asset) in prices" :key="asset">
         {{ asset }}: {{ price }}
@@ -16,7 +16,7 @@ import { onMounted, computed } from "vue";
 const cryptoStore = useCryptoStore();
 
 onMounted(() => {
-  cryptoStore.fetchMarkets();
+  cryptoStore.fetchPrices();
 });
 
 const prices = computed(() => cryptoStore.prices);

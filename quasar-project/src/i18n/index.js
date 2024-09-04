@@ -1,20 +1,15 @@
 import { createI18n } from "vue-i18n";
+import en from "./en.json";
+import zh from "./zh.json";
 
 const messages = {
-  en: {
-    welcome: "Welcome to CoinCap API App",
-    markets: "Markets",
-    realTimePrices: "Real-time Prices",
-  },
-  zh: {
-    welcome: "歡迎來到 CoinCap API 應用",
-    markets: "市場",
-    realTimePrices: "實時價格",
-  },
+  en,
+  zh,
 };
 
 const i18n = createI18n({
   locale: "en", // 默認語言
+  fallbackLocale: "en", // 回退語言
   messages,
 });
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ $t("candleData.title") }}</h2>
+    <h2>Binance data block1 (coming soon)</h2>
     <ul>
       <li v-for="candle in candles" :key="candle.period">
         {{ candle.period }}: {{ $t("candleData.open") }}: {{ candle.open }}

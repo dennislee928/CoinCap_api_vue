@@ -1,0 +1,20 @@
+{
+  "welcome": "歡迎來到 CoinCap API 應用",
+  "cryptoPrices": {
+    "title": "加密貨幣價格"
+  },
+  "marketData": {
+    "title": "市場數據"
+  },
+  "candleData": {
+    "title": "燭台數據",
+    "open": "開盤",
+    "high": "最高",
+    "low": "最低",
+    "close": "收盤",
+    "volume": "成交量"
+  },
+  "tradeData": {
+    "title": "實時交易數據"
+  }
+}

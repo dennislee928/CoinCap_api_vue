@@ -1,0 +1,20 @@
+{
+  "welcome": "Welcome to CoinCap API App",
+  "cryptoPrices": {
+    "title": "Cryptocurrency Prices"
+  },
+  "marketData": {
+    "title": "Market Data"
+  },
+  "candleData": {
+    "title": "Candle Data",
+    "open": "Open",
+    "high": "High",
+    "low": "Low",
+    "close": "Close",
+    "volume": "Volume"
+  },
+  "tradeData": {
+    "title": "Real-Time Trade Data"
+  }
+}

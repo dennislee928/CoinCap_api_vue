@@ -38,6 +38,7 @@
     "yarn": ">= 1.21.1"
   },
   "overrides": {
-    "proxy-addr": "^2.0.8"
+    "proxy-addr": "^2.0.8",
+    "vite": "^6.4.4"
   }
 }

@@ -30,7 +30,7 @@
     "@intlify/vite-plugin-vue-i18n": "^3.3.1",
     "@quasar/app-vite": "^1.9.0",
     "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.14"
+    "postcss": "^8.5.23"
   },
   "engines": {
     "node": "^20 || ^18 || ^16",

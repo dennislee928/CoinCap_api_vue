@@ -46,6 +46,7 @@
     "body-parser": "^1.20.9",
     "immutable": "^4.3.9",
     "lodash": "^4.18.0",
-    "minimatch": "^5.1.8"
+    "minimatch": "^5.1.8",
+    "nanoid": "^3.3.18"
   }
 }
